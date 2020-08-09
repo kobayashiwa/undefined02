@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	font-family: 'Titillium Web', sans-serif;
-	color: #2C3543;
+	color: #fff;
 	background: #000;
 }
 a {
@@ -21,8 +21,13 @@ ul, li {
 	margin: 0;
 	padding: 0;
 }
+.container {
+	width: 100%;
+	max-width: 1290px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
 header {
-	color: #fff;
 	background: #000;
 	height: 90px;
 	padding: 0 20px;
@@ -133,7 +138,6 @@ header {
 	 bottom: 0;
 	 left: 0;
 	 padding: 0 80px 80px 80px;
-	 color: #fff;
 	 font-size: 56px;
 	 width: 70%;
 	 line-height: 1.2;
