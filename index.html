@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <title>undefined - undefinedの対応</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.pkgd.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="navbar-brand"><img src="image/Logo.svg" alt="LonelyPlanet"></div>
+        <div class="navbar-collapse">
+            <ul class="sub-nav">
+                <li class="nav-item"><a href="#">GO PREMIUM</a></li>
+                <li class="nav-item"><a href="#">Live TV</a></li>
+                <li class="nav-item"><a href="#">Globe Trekker</a></li>
+                <li class="nav-item"><a href="#">Eat, Drink & Travel</a></li>
+                <li class="nav-item"><a href="#">Featured Shorts</a></li>
+                <li class="nav-item"><a href="#">Popular</a></li>
+                <li class="nav-item cp_ipselect cp_sl01">
+                    <select required>
+                        <option value="" hidden>All SHOWS</option>
+                        <option value="1">TOPGUN</option>
+                        <option value="2">PHILOSOPHIA</option>
+                        <option value="3">HARMONY</option>
+                        <option value="4">INSPIRE</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="input-group-append"><form action="#" method="get"><input id="sbox1"  id="s" name="s" type="text" placeholder="Search" /></form></div>
+            <div class="btn"><a href="#">Sign in</a></div>
+        </div>
+    </header>
+
+    <div class="main-carousel">
+            <div class="slide slide1"><h2>Why you should visit Bhutan in 2020</h2></div>
+            <div class="slide slide2"><h2>Why you should visit East Nusa Tenggara in 2020</h2></div>
+            <div class="slide slide3"><h2>Why you should visit the Central Asian Silk Road...</h2></div>
+            <div class="slide slide4"><h2>Why you should visit Salzburg in 2020</h2></div>
+            <div class="slide slide5"><h2>Top 10 countries to visit in 2020</h2></div>
+            <div class="slide slide6"><h2>Top 10 cities to visit in 2020</h2></div>
+    </div>
+
+<script>
+    const projects = [
+        {name:"TOPGUN", Contractor:"竹中工務店", SiteArea:"61,856.40㎡", BuildingArea:"3,442.80㎡", FloorSpace:"4,745.10㎡", Floors:"地上2階", Construction:"鉄骨鉄筋コンクリート造", DesignPeriod:"2007/04 - 2008/07", ConstructionPeriod:"2008/07 - 2009/08"},
+        {name:"PHOLOSOPHIA", Contractor:"鹿島建設中国支店", SiteArea:"8,180.80㎡", BuildingArea:"3,793.30㎡", FloorSpace:"4,759.70㎡", Floors:"地上2階", Construction:"鉄筋コンクリート造、鉄骨鉄筋コンクリート造、鉄骨造", DesignPeriod:"2008/05 - 2012/01", ConstructionPeriod:"2012/01 - 2013/02"},
+        {name:"HARMONY", Contractor:"鹿島建設中国支店", SiteArea:"61,856.38㎡", BuildingArea:"1,173.26㎡", FloorSpace:"1,399.19㎡", Floors:"地上2階", Construction:"鉄骨造", DesignPeriod:"2015/01 - 2015/09", ConstructionPeriod:"2015/09 - 2016/03"},
+        {name:"INSPIRE", Contractor:"鹿島建設中国支店", SiteArea:"2,382.13㎡", BuildingArea:"974.84㎡", FloorSpace:"1,181.13㎡", Floors:"地上2階", Construction:"鉄骨造", DesignPeriod:"2017/06 - 2018/04", ConstructionPeriod:"2018/04 - 2018/11"},
+        {name:"DISCOVERY", Contractor:"鹿島建設中国支店", SiteArea:"7,622.97㎡", BuildingArea:"3,386.59㎡", FloorSpace:"4,587.13㎡", Floors:"地上2階", Construction:"鉄骨造", DesignPeriod:"2014/09 - 2017/10", ConstructionPeriod:"2017/10 - 2019/01"},
+        {name:"FLICKITY", SiteArea:"9,622.97㎡", BuildingArea:"5,386.59㎡", FloorSpace:"6,587.13㎡", Floors:"地上5階", Construction:"鉄骨鉄筋コンクリート造", DesignPeriod:"2016/09 - 2019/10", ConstructionPeriod:"2019/10 - 2021/01"},
+        {name:"BXSLIDER", Contractor:"共立建設", BuildingArea:"5,186.59㎡", FloorSpace:"6,387.13㎡", Floors:"地上3階", Construction:"鉄筋コンクリート造", DesignPeriod:"2016/07 - 2019/08", ConstructionPeriod:"2019/08 - 2020/11"},
+        {name:"PREV", Contractor:"旭工務店", SiteArea:"61,856.42㎡", FloorSpace:"4,745.12㎡", Floors:"地上22階", Construction:"鉄骨鉄筋コンクリート造", DesignPeriod:"2007/02 - 2008/05", ConstructionPeriod:"2008/05 - 2009/06"},
+        {name:"NEXT", Contractor:"山田建設株式会社", SiteArea:"180.80㎡", BuildingArea:"793.30㎡", Floors:"地上8階", Construction:"鉄骨造", DesignPeriod:"2009/05 - 2013/01", ConstructionPeriod:"2013/01 - 2014/02"},
+        {name:"ADVENTURE", Contractor:"清水建設", SiteArea:"61,856.38㎡", BuildingArea:"1,173.26㎡", FloorSpace:"1,399.19㎡", Construction:"鉄骨造", DesignPeriod:"2015/01 - 2015/09", ConstructionPeriod:"2015/09 - 2016/03"}
+    ];
+    for (let i = 0; i < projects.length; i++){
+        console.log ("--------------------");
+        const project = projects[i];
+        console.log (`[ 建築物 ]　${project.name}`);
+        console.log (`[ 施工 ]　${project.Contractor}`);
+        console.log (`[ 敷地面積 ]　${project.SiteArea}`);
+        console.log (`[ 建築面積 ]　${project.BuildingArea}`);
+        console.log (`[ 延床面積 ]　${project.FloorSpace}`);
+        console.log (`[ 階数 ]　${project.Floors}`);
+        console.log (`[ 構造 ]　${project.Construction}`);
+        console.log (`[ 設計期間 ]　${project.DesignPeriod}`);
+        console.log (`[ 施工期間 ]　${project.ConstructionPeriod}`);
+    }
+
+    var flkty = new Flickity( '.main-carousel', {
+  // options
+});
+
+</script>
+
+
+</body>
+</html>
+
+
