@@ -128,11 +128,15 @@ header {
  .slide {
 	 position: relative;
  }
- h2 {
+.main-carousel h2 {
 	 position: absolute;
 	 bottom: 0;
 	 left: 0;
 	 padding: 0 80px 80px 80px;
+	 color: #fff;
+	 font-size: 56px;
+	 width: 70%;
+	 line-height: 1.2;
  }
  .slide1 {
 	background-image: url(../image/GettyRF_532238625.jpg);
@@ -163,11 +167,8 @@ header {
 	background-image: url(../image/MilanPollution.jpg);
 	background-size: cover;
  }
-h2 {
-	color: #fff;
-	font-size: 56px;
-	width: 70%;
-	line-height: 1.2;
+.swiper-wrapper-L {
+	margin-top: 64px;
 }
 @media (max-width: 1290px) {
 	.navbar-collapse {
