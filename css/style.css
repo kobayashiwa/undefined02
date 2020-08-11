@@ -139,6 +139,7 @@ header {
 	 left: 0;
 	 padding: 0 80px 80px 80px;
 	 font-size: 56px;
+	 font-weight: 300;
 	 width: 70%;
 	 line-height: 1.2;
  }
@@ -173,6 +174,17 @@ header {
  }
 .swiper-wrapper-L {
 	margin-top: 64px;
+}
+.swiper-wrapper-L h2 {
+	font-size: 20px;
+	font-weight: 300;
+}
+.navbar-collapse {
+	margin-top: 8px;
+}
+.swiper-wrapper-L ul {
+	display: flex;
+	flex-wrap: wrap;
 }
 @media (max-width: 1290px) {
 	.navbar-collapse {
