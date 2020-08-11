@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	font-family: 'Titillium Web', sans-serif;
-	color: #2C3543;
+	color: #fff;
 	background: #000;
 }
 a {
@@ -21,8 +21,13 @@ ul, li {
 	margin: 0;
 	padding: 0;
 }
+.container {
+	width: 100%;
+	max-width: 1290px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
 header {
-	color: #fff;
 	background: #000;
 	height: 90px;
 	padding: 0 20px;
@@ -128,11 +133,15 @@ header {
  .slide {
 	 position: relative;
  }
- h2 {
+.main-carousel h2 {
 	 position: absolute;
 	 bottom: 0;
 	 left: 0;
 	 padding: 0 80px 80px 80px;
+	 font-size: 56px;
+	 font-weight: 300;
+	 width: 70%;
+	 line-height: 1.2;
  }
  .slide1 {
 	background-image: url(../image/GettyRF_532238625.jpg);
@@ -163,11 +172,38 @@ header {
 	background-image: url(../image/MilanPollution.jpg);
 	background-size: cover;
  }
-h2 {
-	color: #fff;
-	font-size: 56px;
-	width: 70%;
-	line-height: 1.2;
+.swiper-wrapper-L {
+	margin: 64px 0;
+}
+.swiper-wrapper-L h2 {
+	font-size: 20px;
+	font-weight: 300;
+}
+.swiper-wrapper-L ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 8px;
+	margin-left: -16px;
+}
+.swiper-L {
+	width: 33.33%;
+	padding-left: 16px;
+}
+.swiper-L img {
+	width: 100%;
+}
+.detail {
+	margin-top: 8px;
+}
+.detail h3 {
+	font-size: 14px;
+	font-weight: 300;
+	padding-bottom: 4px;
+}
+.detail .Episode {
+	font-size: 12px;
+	font-weight: 200;
+	opacity: 0.7;
 }
 @media (max-width: 1290px) {
 	.navbar-collapse {
@@ -178,6 +214,15 @@ h2 {
 	}
 	.btn {
 		text-align: right;
+		width: 100%;
+	}
+	.main-carousel .slide {
+		width: 100%;
+		height: 500px;
+	 }
+	 .main-carousel h2 {
+		padding: 0 40px 40px 40px;
+		font-size: 40px;
 		width: 100%;
 	}
 }
