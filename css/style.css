@@ -186,6 +186,12 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 }
+.swiper-L {
+	width: 33.33%;
+}
+.swiper-L img {
+	width: 100%;
+}
 @media (max-width: 1290px) {
 	.navbar-collapse {
 		justify-content: flex-end;
