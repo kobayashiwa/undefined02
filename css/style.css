@@ -173,24 +173,27 @@ header {
 	background-size: cover;
  }
 .swiper-wrapper-L {
-	margin-top: 64px;
+	margin: 64px 0;
 }
 .swiper-wrapper-L h2 {
 	font-size: 20px;
 	font-weight: 300;
 }
-.navbar-collapse {
-	margin-top: 8px;
-}
 .swiper-wrapper-L ul {
 	display: flex;
 	flex-wrap: wrap;
+	margin-top: 8px;
+	margin-left: -16px;
 }
 .swiper-L {
 	width: 33.33%;
+	padding-left: 16px;
 }
 .swiper-L img {
 	width: 100%;
+}
+.detail {
+	margin-top: 8px;
 }
 @media (max-width: 1290px) {
 	.navbar-collapse {
